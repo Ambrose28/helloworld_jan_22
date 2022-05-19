@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build Step'
-        sleep 10 #delay
+        sleep 10 
       }
     }
      stage('Test') {
@@ -21,7 +21,7 @@ pipeline {
      stage('Docker') {
       steps {
         echo 'Image Step'
-        sleep 10 #
+        sleep 10 
       }
     }
   }
