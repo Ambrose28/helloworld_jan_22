@@ -1,6 +1,5 @@
 pipeline {
     agent any
-
     tools{
         maven 'M2_HOME'
     }
@@ -9,9 +8,6 @@ pipeline {
     registryCredential = 'jenkins-ecr'
     dockerimage = ''
   }
-        triggers {
-        pollSCM('* * * * *')
-    }
     stages {
         stage('Checkout'){
             steps{
